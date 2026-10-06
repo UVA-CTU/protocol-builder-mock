@@ -63,7 +63,7 @@ def new_study():
         study = Study()
         study.study_details = StudyDetails()
         _update_study(study, form)
-        flash('Study created successfully!', 'success')
+        flash(f'Study {study.STUDYID} created successfully!', 'success')
         return redirect_home()
 
     # set default first time
